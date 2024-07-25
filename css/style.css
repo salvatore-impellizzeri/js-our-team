@@ -1,7 +1,16 @@
+body{
+    background-color: #F5F5F1;
+}
+
 /* 
                     HEADER
 */
 
+.my-card{
+    width: calc(100% / 3 - 20px);
+    background-color: white;
+    height: 550px;
+}
 
 /* 
                     MAIN
