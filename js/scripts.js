@@ -51,18 +51,24 @@ for(let i = 0; i < team.length; i++){
     mainCont.append(card);
     cardArray.push(card);
 
-    // INSERIMENTO IMMAGINI
+    // IMMAGINI
 
     let img = document.createElement("img");
     img.classList.add("w-100");
     img.src = team[i].image;
 
+    // NOME E COGNOME
+
     let name = document.createElement("p");
     name.classList.add("fs-5", "fw-medium", "mb-0", "mt-3");
     name.innerHTML = `${team[i].firstName} ${team[i].lastName}`;
     
+    // RUOLI
+
     let role = document.createElement("p");
     role.innerHTML = `${team[i].role}`;
+    
+    // INSERIMENTO
     
     card.append(img);
     card.append(name);
