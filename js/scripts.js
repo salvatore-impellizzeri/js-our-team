@@ -56,6 +56,15 @@ for(let i = 0; i < team.length; i++){
     let img = document.createElement("img");
     img.classList.add("w-100");
     img.src = team[i].image;
+
+    let name = document.createElement("p");
+    name.classList.add("fs-5", "fw-medium", "mb-0", "mt-3");
+    name.innerHTML = `${team[i].firstName} ${team[i].lastName}`;
     
-    card.append(img)
+    let role = document.createElement("p");
+    role.innerHTML = `${team[i].role}`;
+    
+    card.append(img);
+    card.append(name);
+    card.append(role);
 }

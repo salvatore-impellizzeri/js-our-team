@@ -9,7 +9,13 @@ body{
 .my-card{
     width: calc(100% / 3 - 20px);
     background-color: white;
-    height: 550px;
+    text-align: center;
+    color: #645E56;
+    font-family: serif;   
+}
+
+.my-card > *{
+    width: 100%;
 }
 
 /* 
